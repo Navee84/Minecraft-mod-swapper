@@ -34,9 +34,7 @@ I would love feedbacks on anything and if you have any questions, don't hesitate
 
 ## What is upcoming ?
 
-The first release is coming, in an executable file.
-
-I also have making the UI and UX way better in mind. (but later, i don't have the skills for now.)
+I have making the UI and UX way better in mind since the beginning.
 
 Besides that, I don't really know what to add or change in the program, I would like any suggestion !
 
