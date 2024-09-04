@@ -11,6 +11,14 @@ The format is inspired from [Keep a Changelog](https://keepachangelog.com).
 🟧 stands for work in progress<br>
 
 
+## [v1.1.4] - 09/04/24
+
+### **General**
+
+**Added**
+- 🟩 Added 2 flags around the version for later rework of the auto update.
+<br>
+
 ## [v1.1.3] - 07/11/24
 
 ### **General**
@@ -19,7 +27,7 @@ The format is inspired from [Keep a Changelog](https://keepachangelog.com).
 - 🟦 reworked the entire messages id to make them more readable, coherent and simpler to read in the code.
 
 **Fixed**
-- 🟪 Fixed 2 non translated messages.
+- 🟪 Fixed 2 non translated messages in the English file.
 <br>
 
 ## [v1.1.2] - 05/31/24
