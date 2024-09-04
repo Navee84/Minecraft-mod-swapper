@@ -11,7 +11,10 @@ except Exception as e:
     input("")
     exit()
 
-version = "1.1.3"
+# VERSION FLAG START
+version = "1.1.4"
+# VERSION FLAG END
+
 supported_language_versions = ["1.1.3"]
 forbidden_names = ["0","CANCEL"]
 GITHUB = "https://github.com/Navee82/Minecraft-mod-swapper"
@@ -59,6 +62,9 @@ def download_latest():
         print(f"Error : {response.status_code}")
 
 def update_config(old_version):
+    '''
+    met à jour le fichier de config
+    '''
     match old_version:
         case "1.0.3":
             config["Settings"]["transfer_detail"] = "False"
@@ -80,6 +86,9 @@ def update_config(old_version):
 
         case "1.1.2":
             config["General"]["version"] = "1.1.3"
+
+        case "1.1.3":
+            config["General"]["version"] = "1.1.4"
 
         case _:
             print(f" Update for the config not found, please contact the creator of this program on GitHub : {GITHUB}")
