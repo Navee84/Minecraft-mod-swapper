@@ -69,7 +69,7 @@ The settings allows ou to :
   - ON : every mod swapped is displayed in the console
   - OFF : only the numbers of mods swapped is displayed
 - Change your language file
-- Turn ON/OFF the auto update
+- Turn ON/OFF the auto update **WARNING : I do not plan on making the executable auto updating from the internet. You'll have to download latest versions manually !**
 
 ### Save
 save the config values, if not done before exiting, everything done will be forgotten by the program
