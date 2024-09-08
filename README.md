@@ -1,5 +1,5 @@
 # Minecraft-mod-swapper
-A simple python project to swap your mods in your .minecraft folder by having different profiles so you don't have to change these mods manually ever again.
+Minecraft mod swapper is a siple python project that allows you to manage your mods with the vanilla launcher more easely by having a profile system so you won't have to change manually your mods whenever you change your modloader profile.
 
 For peopole to know : I'm a young french trying to code something, so please forgive my english and my bad project managment.
 This is my first python project, the code is probably horrible but hey, it works ! (i'm constantly improving the code)
@@ -39,19 +39,20 @@ I have making the UI and UX way better in mind since the beginning.
 Besides that, I don't really know what to add or change in the program, I would like any suggestion !
 
 ## Modswapper versions
-Any notable version will be reported in this section. Versions like hotfixes and minor code modifications will not be reported here.
+Any notable version will be reported in this section.
 
-| Status  | Version                                                                                                                | file type  | release date |
-|:-------:|:-------:                                                                                                               |:----------:|:------------:|
-| release | [1.1.3](https://github.com/Navee82/Minecraft-mod-swapper/blob/39bebde124bbf80e1c10a2bbbbe26b50e8465e9e/mod_swapper.py) | python     | 07/11/24     |
-| release | [1.1.2](https://github.com/Navee82/Minecraft-mod-swapper/blob/d8931bb4424a7edff3167c07185700368b48b6c1/mod_swapper.py) | python     | 05/31/24     |
-| release | [1.1.0](https://github.com/Navee82/Minecraft-mod-swapper/blob/83b8470a8eba4115e8251717e7831dd48fb93381/mod_swapper.py) | python     | 05/15/24     |
-| release | [1.0.5](https://github.com/Navee82/Minecraft-mod-swapper/blob/9611a3e36b55e464bea3b7b6289e2c7eb7766235/mod_swapper.py) | python     | 04/10/24     |
-| release | [1.0.4](https://github.com/Navee82/Minecraft-mod-swapper/blob/5fd6b10cde20f5b5aa147e3427ce58058c619071/mod_swapper.py) | python     | 03/28/24     |
-| release | [1.0.3](https://github.com/Navee82/Minecraft-mod-swapper/blob/0d486d23eebcae3367cf1c675a6ba96c4dbed2a4/mod_swapper.py) | python     | 03/24/24     |
-| release | [1.0.2](https://github.com/Navee82/Minecraft-mod-swapper/blob/705ab9792154a72db86fa50f58da532340e713e4/mod_swapper.py) | python     | 03/24/24     |
-| release | [1.0.1](https://github.com/Navee82/Minecraft-mod-swapper/blob/e01bff0260faa214d50c8fdf5ab0d2f424b03c8d/mod_swapper.py) | python     | 03/24/24     |
-| release | 1.0.0                                                                                                                  | python     | 03/24/24     |
+| Status  | Version                                                                                                                | release date |
+|:-------:|:-------:                                                                                                               |:------------:|
+| release | [1.1.5](https://github.com/Navee82/Minecraft-mod-swapper/blob/c84ec921e5fa4cf588cb92e7f0151b1e122707bb/mod_swapper.py) | 09/08/24     |
+| release | [1.1.3](https://github.com/Navee82/Minecraft-mod-swapper/blob/39bebde124bbf80e1c10a2bbbbe26b50e8465e9e/mod_swapper.py) | 07/11/24     |
+| release | [1.1.2](https://github.com/Navee82/Minecraft-mod-swapper/blob/d8931bb4424a7edff3167c07185700368b48b6c1/mod_swapper.py) | 05/31/24     |
+| release | [1.1.0](https://github.com/Navee82/Minecraft-mod-swapper/blob/83b8470a8eba4115e8251717e7831dd48fb93381/mod_swapper.py) | 05/15/24     |
+| release | [1.0.5](https://github.com/Navee82/Minecraft-mod-swapper/blob/9611a3e36b55e464bea3b7b6289e2c7eb7766235/mod_swapper.py) | 04/10/24     |
+| release | [1.0.4](https://github.com/Navee82/Minecraft-mod-swapper/blob/5fd6b10cde20f5b5aa147e3427ce58058c619071/mod_swapper.py) | 03/28/24     |
+| release | [1.0.3](https://github.com/Navee82/Minecraft-mod-swapper/blob/0d486d23eebcae3367cf1c675a6ba96c4dbed2a4/mod_swapper.py) | 03/24/24     |
+| release | [1.0.2](https://github.com/Navee82/Minecraft-mod-swapper/blob/705ab9792154a72db86fa50f58da532340e713e4/mod_swapper.py) | 03/24/24     |
+| release | [1.0.1](https://github.com/Navee82/Minecraft-mod-swapper/blob/e01bff0260faa214d50c8fdf5ab0d2f424b03c8d/mod_swapper.py) | 03/24/24     |
+| release | 1.0.0                                                                                                                  | 03/24/24     |
 
 ### 
 <br><br>``Minecraft mod swapper made by Navee_. Original project started on 02/13/24. If you want to modify it at your own, feel free to do it but credit me.``
