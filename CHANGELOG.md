@@ -11,6 +11,14 @@ The format is inspired from [Keep a Changelog](https://keepachangelog.com).
 🟧 stands for work in progress<br>
 
 
+## [v1.1.5] - [UREALEASED]
+
+### **General**
+
+**Changed**
+- 🟦 Changed the way auto update was working to make it more reliable. Does not affect the UX.
+<br>
+
 ## [v1.1.4] - 09/04/24
 
 ### **General**
