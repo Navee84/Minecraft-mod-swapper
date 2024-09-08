@@ -12,12 +12,13 @@ except Exception as e:
     exit()
 
 # VERSION FLAG START
-version = "1.1.4"
+VERSION = "1.1.5"
 # VERSION FLAG END
 
 supported_language_versions = ["1.1.3"]
 forbidden_names = ["0","CANCEL"]
 GITHUB = "https://github.com/Navee82/Minecraft-mod-swapper"
+os.system('title Minecraft Mod Swapper')
 
 # Créer un objet ConfigParser
 config = configparser.ConfigParser()
@@ -33,15 +34,14 @@ def check_connexion():
 def get_latest_version():
     print(message("function.checking_update.main"))
     try:
-        response = requests.get("https://navee82.github.io/modswapper-website/versions.html")
+        response = requests.get("https://raw.githubusercontent.com/Navee82/Minecraft-mod-swapper/main/mod_swapper.py")
     except Exception as e :
         print(e)
     
     if response.status_code == 200:
     # Trouver la version correspondante
 
-        # version = response.text[(response.text.find("<release_version>")+17): (response.text.find("</release_version>"))]
-        version = response.text[(response.text.find("<dev_version>")+13): (response.text.find("</dev_version>"))]
+        version = response.text[(response.text.find("# VERSION FLAG START")+32): (response.text.find("# VERSION FLAG END")-2)]
 
         return version
     else:
@@ -89,6 +89,9 @@ def update_config(old_version):
 
         case "1.1.3":
             config["General"]["version"] = "1.1.4"
+
+        case "1.1.4":
+            config["General"]["version"] = "1.1.5"
 
         case _:
             print(f" Update for the config not found, please contact the creator of this program on GitHub : {GITHUB}")
@@ -146,7 +149,7 @@ def generate_config():
     # Définition des paramètres
 
     config["General"] = {
-    "version": version,
+    "version": VERSION,
     "GAME_FOLDER_PATH": "None",
     "loaded_profile": "None"
     }
@@ -215,7 +218,6 @@ def directory_empty(directory):
         return True
     else:
         return False
-
 
 def clear():
     os.system('cls')
@@ -303,10 +305,6 @@ def rename_profile(old_name,new_name):
     return PROFILES
 
 
-
-
-
-
 def openfolder(window_title):
     '''
     Cette fonction renvoie un path de dossier
@@ -327,6 +325,7 @@ def ask_game_folder():
     game_folder = openfolder(message("window_title.ask_game_folder"))
     return game_folder
 
+
 def confirmation(titre,message):
 
     parent = Tk()
@@ -338,6 +337,7 @@ def confirmation(titre,message):
     parent.destroy()  # Détruire la fenêtre parente après utilisation
 
     return confirmation
+
 
 def ui_show(ui):
     match ui:
@@ -382,8 +382,6 @@ def ui_show(ui):
             print(f" 4) {message("function.ui_show.settings.change_language")} : {os.path.basename(language_path)}")
             print(f" 5) {message("function.ui_show.settings.auto_update")} : {auto_update}")
             print(f"\n 0) {message("function.ui_show.global.back_to_main")}")
-        
-
 
 
 def swapmods(old,new,folder):
@@ -483,7 +481,7 @@ config.read('config.ini')
 
 # Auto config updater
 print(" Updating config...")
-while config_version() != version:
+while config_version() != VERSION:
     config.read('config.ini')
     update_config(config_version())
 print(" Config is up to date !")
@@ -529,10 +527,10 @@ try :
 except Exception as e:
     messagebox.showerror(title=message("messagebox.title.error"), message=message("messagebox.message.retrieving_data_error",e), icon="error", type="ok")
     
-# Auto updater
+# Auto updater      /!/disable on compiled file/!/
 if auto_update:
     if check_connexion():
-        if get_latest_version() != version:
+        if get_latest_version() != VERSION:
             download_latest()
         else:
             print(message("auto_update.up_to_date"))
@@ -753,7 +751,7 @@ while loop_main == True:
             print(message("saving_program"))
 
             config_values = [
-            ("General", "version", str(version)),
+            ("General", "version", str(VERSION)),
             ("General", "GAME_FOLDER_PATH", GAME_FOLDER_PATH),
             ("General", "loaded_profile", loaded_profile),
             ("Settings", "transfer_detail", str(TRANSFER_DETAIL)),
@@ -771,7 +769,7 @@ while loop_main == True:
                 loop_main = False
         
         case "debug":
-            print(f"version= {version}")
+            print(f"version= {VERSION}")
             print(f"GAME_FOLDER_PATH= {GAME_FOLDER_PATH}")
             print(f"loaded_profile= {loaded_profile}")
             print(type(loaded_profile))
