@@ -11,7 +11,7 @@ The format is inspired from [Keep a Changelog](https://keepachangelog.com).
 🟧 stands for work in progress<br>
 
 
-## [v1.1.5] - [UREALEASED]
+## [v1.1.5] - 09/08/24
 
 ### **General**
 
